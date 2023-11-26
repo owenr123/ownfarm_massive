@@ -1,0 +1,150 @@
+.register-3 {
+    background-color: white;
+    display: flex;
+}
+
+.gambar-register-1 {
+    width: 42rem;
+    height: auto;
+}
+
+.register1-section {
+    margin: 80px;
+    padding: 45px;
+    border: 2px solid var(--penanda, #085B45);
+    background: white;
+    justify-content: center;
+}
+
+.register1-level-line {
+    display: flex;
+    justify-content: center;
+}
+
+.register1-level1 {
+    width: 80px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: #085B45;
+    margin-right: 10px;
+}
+
+.register1-level2 {
+    width: 80px;
+    height: 7px;
+    border-radius: 25px;
+    border: 1px solid var(--penanda, #085B45);
+    background: #FFF;
+}
+
+.nama-telpon {
+    display: flex;
+}
+
+.inputnama, .inputtelpon {
+    margin-right: 20px;
+}
+
+.inputnama input, .inputtelpon input {
+    width: 150px;
+}
+
+.phone-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.telpon-container {
+    position: relative;
+}
+
+.inputalamat {
+    width: 330px;
+    margin-top: 30px;
+}
+
+.inputalamat input {
+    width: 330px;
+}
+
+.alamat-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.alamat-container {
+    position: relative;
+}
+
+.kota-kelurahan-kecamatan {
+    display: flex;
+}
+
+.inputkota, .inputkelurahan, .inputkecamatan {
+    width: 96px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.inputkota input, .inputkelurahan input, .inputkecamatan input {
+    width: 96px;  
+}
+
+.register-line {
+    height: 2px;
+    background-color: #085B45;
+    margin-top: 50px;
+}
+
+.foto button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 25px;
+    background: #937100;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.upload-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #085B45;
+    align-self: center;
+    border-radius: 10px;
+}
+  
+#file-input {
+    display: none;
+}
+  
+label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.arrow-up {
+    width: 50px;
+    height: 50px;
+}
+  
+span {
+    margin-top: 10px;
+}

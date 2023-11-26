@@ -1,0 +1,33 @@
+.register2 {
+    background-color: white;
+    display: flex;
+}
+
+.gambar-register-1 {
+    width: 42rem;
+    height: auto;
+}
+
+.register2-section {
+    margin: 80px;
+    padding: 45px;
+    border: 2px solid var(--penanda, #085B45);
+    background: white;
+    justify-content: center;
+}
+
+.register2-level-line {
+    display: flex;
+    justify-content: center;
+}
+
+.register2-level1, .register2-level2 {
+    width: 80px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: #085B45;
+}
+
+.register2-level1 {
+    margin-right: 10px;
+}
