@@ -3,154 +3,186 @@
   display: flex;
 }
   
-.login_content {
-  margin: 80px;
-  padding: 45px;
-  border: 2px solid var(--penanda, #085B45);
+.formlogin {
+  margin: auto;
+  margin-top: 6rem;
+  padding: 50px;
+  border: 2px solid var(--penanda, #085C45);
   background: white;
-  justify-content: center;
 }
-  
-.daftar_button {
+
+.formlogin-daftarsection {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-  
-.daftar_button h3 {
+
+.formlogin-daftarsection h3 {
   margin-right: 10px;
-  color: #07362A;
-  font-size: 14px;
 }
 
-.daftar_button button {
-  width: 80px;
-  padding: 5px;
-  border-radius: 25px;
-  background: #937100;
-  color: white;
+.formlogin-daftarsection button {
   border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #937100;
+  color: white;
   cursor: pointer;
-  align-self: center;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.loginform {
-    margin-top: 50px;
-  }
-  
-  .loginform h2 {
-    margin-bottom: 20px;
-    color: #07362A;
-    font-weight: 400;
-  }
-  
-  .loginform form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  
-  .loginform label {
-    margin-bottom: 8px;
-    color: #07362A;
-    font-weight: 500;
-  }
-  
-  .loginform input {
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+.formlogin-daftarsection button:hover {
+  background-color: white;
+  color: #937100;
+  border-radius: 25px;
+  border: 2px solid #937100;
+}
 
-.password-input {
-  position: relative;
+.formlogin-inputuser {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px; /* Menambahkan margin antara elemen-elemen */
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.password-input input {
-  flex: 1;
-  padding-right: 30px;
+.formlogin-inputuser label {
+  margin-bottom: 5px; /* Jarak antara label dan input */
+  color: #085C45;
+  font-weight: 600;
 }
 
-.password-input span {
+.formlogin-inputuser input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085C45;
+  width: 300px;
+}
+
+.formlogin-inputpassword {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.formlogin-inputpassword label {
+  margin-bottom: 5px;
+  color: #085C45;
+  font-weight: 600;
+}
+
+.formlogin-inputpassword .formlogin-inputpassword-container {
+  position: relative;
+}
+
+.formlogin-inputpassword input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085C45;
+  width: 300px;
+}
+
+.formlogin-inputpassword .formlogin-inputpassword-icon {
   position: absolute;
   right: 10px;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #07362A;
+  color: #085C45;
 }
 
-  .loginform button {
-    width: 80px;
-    padding: 10px;
-    border-radius: 25px;
-    background: #937100;
-    color: white;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-  }
-
-.remember-forgot {
+.formlogin-lupapassword {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
 }
 
-.remember-forgot label {
-  display: flex;
+.remember-me {
+  align-items: center; /* Pusatkan elemen secara vertikal */
+  flex-direction: row; /* Tampilkan elemen dalam satu baris */
+  color: #937100;
+  font-weight: bold;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.forgot-password-link {
+  color: #937100;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttonmasuk {
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #937100;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 4rem;
   font-size: 16px;
 }
 
-.remember-forgot label input {
-  color: #937100;
+.buttonmasuk:disabled {
+  background-color: #cccccc; /* Ganti dengan warna abu- abu yang Anda inginkan */
+  color: #666666; /* Ganti dengan warna teks yang sesuai */
+  cursor: not-allowed;
 }
 
-.remember-forgot label p {
-  margin-top: 1px;
-  color: #937100;
-  font-weight: 400;
-}
-
-.remember-forgot a {
-  color: #937100;
-  text-decoration: none;
-}
-
-.openwith-section {
+.with-line {
   display: flex;
   align-items: center;
-  width: 100%;
-  position: relative;
   margin-top: 3rem;
 }
 
-.line {
+.with-line h4 {
   flex: 1;
-  height: 2px;
-  background-color: #085B45;
+  font-size: 12px;
+  text-align: center;
+  color: #085C45;
 }
 
-.openwith-section h4 {
-  padding: 0 16px;
-  color: #07362A;
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+.with-line:before,
+.with-line:after {
+  content: "";
+  flex: 1; /* Menggunakan ruang fleksibel untuk garis kiri dan kanan */
+  border-top: 2px solid #085C45;
+  margin: 0 10px; /* Memberikan jarak antara teks dan garis */
 }
 
 .icons {
   display: flex;
   justify-content: center;
+  margin-top: 20px; /* Sesuaikan dengan kebutuhan margin di atas ikon */
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  margin: 0 8px; /* Sesuaikan margin sesuai keinginan Anda */
+.icons a {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-/* ... existing CSS ... */
+.icons img {
+  width: 30px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

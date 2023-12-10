@@ -1,150 +1,202 @@
-.register-3 {
-    background-color: white;
+.register1 {
     display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    justify-content: space-between; /* Beri ruang antara elemen */
+  }
+  
+.gambarregister {
+    max-width: 50%; /* Atur lebar gambar agar tidak melebihi 50% dari parent */
 }
-
-.gambar-register-1 {
-    width: 42rem;
-    height: auto;
-}
-
-.register1-section {
-    margin: 80px;
-    padding: 45px;
+  
+.formregister1 {
+    margin: auto;
+    margin-top: 6rem;
+    padding: 50px;
     border: 2px solid var(--penanda, #085B45);
     background: white;
-    justify-content: center;
+    max-width: 500px; /* Sesuaikan dengan lebar yang diinginkan */
+    width: 100%; /* Pastikan elemen mencakup lebar maksimum */
+    box-sizing: border-box;
 }
 
-.register1-level-line {
+.formregister1-levelline {
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
-.register1-level1 {
-    width: 80px;
+.formregister1-level1 {
+    width: 86.535px;
     height: 7px;
     border-radius: 25px;
-    background-color: #085B45;
-    margin-right: 10px;
+    background: var(--penanda, #085B45);
 }
 
-.register1-level2 {
-    width: 80px;
+.formregister1-level2 {
+    width: 86.535px;
     height: 7px;
     border-radius: 25px;
     border: 1px solid var(--penanda, #085B45);
     background: #FFF;
 }
 
-.nama-telpon {
+.formregister1-namanohp {
     display: flex;
 }
 
-.inputnama, .inputtelpon {
-    margin-right: 20px;
-}
-
-.inputnama input, .inputtelpon input {
-    width: 150px;
-}
-
-.phone-icon {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.telpon-container {
-    position: relative;
-}
-
-.inputalamat {
-    width: 330px;
-    margin-top: 30px;
-}
-
-.inputalamat input {
-    width: 330px;
-}
-
-.alamat-icon {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.alamat-container {
-    position: relative;
-}
-
-.kota-kelurahan-kecamatan {
-    display: flex;
-}
-
-.inputkota, .inputkelurahan, .inputkecamatan {
-    width: 96px;
-    margin-top: 30px;
-    margin-right: 20px;
-}
-
-.inputkota input, .inputkelurahan input, .inputkecamatan input {
-    width: 96px;  
-}
-
-.register-line {
-    height: 2px;
-    background-color: #085B45;
-    margin-top: 50px;
-}
-
-.foto button {
-    width: 100px;
-    padding: 10px;
-    border-radius: 25px;
-    background: #937100;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.upload-foto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.upload-column {
+.formregister1-inputnama,
+.formregister1-inputnohp {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    margin-right: 15px;
+}
+
+.formregister1-inputnama label,
+.formregister1-inputnohp label {
+    margin-bottom: 5px;
+    color: #085B45;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
+
+.formregister1-inputnama input,
+.formregister1-inputnohp input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #085B45;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formregister1-inputnohp-with-icon {
+    position: relative;
+}
+
+.formregister1-iconnohp {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #085B45;
+}
+
+.formregister1-inputalamat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 300px;
-    height: 200px;
+}
+
+.formregister1-inputalamat label {
+    margin-bottom: 5px;
+    color: #085B45;
+    font-weight: 600;
+    text-align: left; /* Mengatur teks label ke kiri */
+    width: 100%; /* Mencegah label mengambil lebar penuh */
+}
+
+.formregister1-inputalamat input {
+    padding: 8px;
+    border-radius: 5px;
     border: 2px solid #085B45;
-    align-self: center;
-    border-radius: 10px;
+    width: 400px;
+    box-sizing: border-box; /* Mencegah padding dan border mempengaruhi lebar total */
 }
-  
-#file-input {
-    display: none;
+
+.formregister1-inputalamat-with-icon {
+    position: relative;
 }
-  
-label {
-    cursor: pointer;
+
+.formregister1-iconalamat {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Sesuaikan posisi ikon di dalam input */
+    transform: translateY(-50%);
+    color: #085B45;
+}
+
+.formregister1-kotakelurahankecamatan {
+    display: flex;
+    gap: 15px;
+}
+
+.formregister1-inputkota,
+.formregister1-inputkelurahan,
+.formregister1-inputkecamatan {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-  
-.arrow-up {
-    width: 50px;
-    height: 50px;
+
+.formregister1-inputkota label,
+.formregister1-inputkelurahan label,
+.formregister1-inputkecamatan label {
+    margin-bottom: 5px;
+    color: #085B45;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
 }
-  
-span {
-    margin-top: 10px;
+
+.formregister1-inputkota input,
+.formregister1-inputkelurahan input,
+.formregister1-inputkecamatan input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #085B45;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.formregister1-line {
+    height: 2px;
+    width: 100%;
+    background-color: #085B45;
+    margin: 55px 0;
+}
+
+.formregister1-inputfotoprofile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formregister1-inputfotoprofile h3 {
+    color: #085B45;
+}
+
+.formregister1-inputfotoprofile p {
+    color: #085B45;
+    margin-top: 5px;
+}
+
+.formregister1-inputfile input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #085B45;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Memberikan jarak bawah */
+}
+
+.formregister1 button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #937100;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 16px;
+    text-decoration: none;
+}
+

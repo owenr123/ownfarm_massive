@@ -1,11 +1,10 @@
-/* Resetting some default styles for list and anchor elements */
 .navbarberanda {
   font-family: 'Arial', sans-serif;
-  background-color: #085C45; /* Background color of the navbar */
-  padding: 10px; /* Padding around the content inside the navbar */
+  background-color: #085C45;
+  padding: 10px;
 }
 
-nav {
+.navbarberanda nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,30 +12,35 @@ nav {
   margin-right: 30px;
 }
 
-nav img {
+.navbarberanda nav img {
   display: block;
 }
 
-ul {
+.navbarberanda ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-li {
-  margin-right: 20px; /* Spacing between each navbar item */
+.navbarberanda li {
+  margin-right: 20px;
 }
 
-a {
+.navbarberanda a {
   text-decoration: none;
-  color: #fff; /* Text color of navbar items */
+  color: white;
   font-weight: bold;
   font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 6px;
 }
 
-a:hover {
-  color: #ffcc00; /* Text color on hover */
+.navbarberanda a:hover {
+  color: #937100;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px;
 }
 
 
@@ -66,17 +70,18 @@ a:hover {
 
 .judul {
   flex: 1;
-  margin-left: 7rem;
+  margin-left: 6rem;
 }
 
 .judul h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #085C45;
 }
 
 .judul h3 {
   font-size: 18px;
-  color: #555;
+  color: #085C45;
 }
 
 .isi {
@@ -85,17 +90,18 @@ a:hover {
   line-height: 1.5;
   color: #333;
   text-align: justify;
-  margin-right: 4rem;
-  margin-left: 5rem;
+  margin-right: 6rem;
+  margin-left: 4rem;
   margin-top: 30px;
 }
 
 .keunggulanberanda {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .keunggulanberanda h2 {
   margin-left: 8rem;
+  color: #085C45;
 }
 
 .keunggulan-content {
@@ -125,6 +131,10 @@ a:hover {
   margin-top: -25px;
 }
 
+.penjelasan h3 {
+  color: #085C45;
+}
+
 .penjelasan p {
   margin-top: 3px;
   text-align: justify;
@@ -134,31 +144,60 @@ a:hover {
 .komunitasberanda {
   background-color: #F3F3F3;
   margin-top: 50px;
+  padding-top: 16px;
+  height: 300px;
 }
 
-/* ProfileCard.css */
+.komunitasberanda h2 {
+  margin-left: 6rem;
+  color: #085C45;
+}
+
+.komunitasberanda-section {
+  display: flex;
+  margin-left: 5rem;
+}
 
 .profile-card {
-  border: 1px solid #ccc;
+  border-radius: 8px;
   padding: 16px;
   margin: 16px;
   width: 300px;
-  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di bawah card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px); /* Menggeser card ke atas saat kursor diarahkan ke card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Meningkatkan intensitas bayangan ketika dihover */
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
 .header img {
-  width: auto;
-  height: 35px;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
 }
 
 .info {
   flex: 1;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.email {
+  color: #777;
 }
 
 .options {
@@ -166,15 +205,12 @@ a:hover {
 }
 
 .status {
-  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 .actions {
-  margin-top: 10px;
-}
-
-button {
-  margin-right: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 .requestberanda {
@@ -183,6 +219,7 @@ button {
 
 .requestberanda h2 {
   margin-left: 7rem;
+  color: #085C45;
 }
 
 .requestberanda-content {
@@ -272,6 +309,12 @@ footer img {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
+}
+
+.beranda-navlink.active {
+  background-color: #937100;
+  border-radius: 20px;
+  padding: 6px;
 }
 
 

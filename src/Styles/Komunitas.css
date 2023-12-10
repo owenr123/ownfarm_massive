@@ -1,0 +1,166 @@
+.navbarkomunitas {
+  font-family: 'Arial', sans-serif;
+  background-color: #085C45; /* Background color of the navbar */
+  padding: 10px; /* Padding around the content inside the navbar */
+}
+  
+.navbarkomunitas nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+  
+.navbarkomunitas nav img {
+  display: block;
+}
+  
+.navbarkomunitas ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+  
+.navbarkomunitas li {
+  margin-right: 20px; /* Spacing between each navbar item */
+}
+  
+.navbarkomunitas a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 6px;
+}
+  
+.navbarkomunitas a:hover {
+  color: #937100;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.komunitas-navlink.active {
+  background-color: #937100;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.navbarkomunitas2 {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Ganti warna background menjadi putih */
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbarkomunitas2 .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.navbarkomunitas2 .left-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbarkomunitas2 .left-content h4 {
+  margin-right: 20px;
+  color: #085C45;
+}
+
+.navbarkomunitas2 .right-content {
+    display: flex;
+    align-items: center;
+}
+
+.navbarkomunitas2 input[type="text"] {
+  padding: 6px;
+  margin-right: 10px;
+  border: 2px solid #085C45;
+  border-radius: 4px;
+}
+
+.navbarkomunitas2 button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #937100;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100px;
+}
+
+.navbarkomunitas2 button:hover {
+  background-color: white;
+  color: #937100;
+  border: 2px solid #937100;
+  padding: 8px;
+}
+
+.komunitassection {
+    justify-content: center;
+}
+  
+  .komunitassection-card {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px auto; /* Tengahkan card secara horizontal */
+    max-width: 600px; /* Tentukan lebar maksimal card */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+  }
+  
+  .komunitassection-card:hover {
+    transform: translateY(-5px); /* Menggeser card ke atas saat kursor diarahkan ke card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Meningkatkan intensitas bayangan ketika dihover */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .email {
+    color: #777;
+  }
+  
+  .options {
+    cursor: pointer;
+  }
+  
+  .status {
+    margin-bottom: 12px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 20px;
+  }

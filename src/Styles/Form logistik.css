@@ -1,0 +1,345 @@
+.navbarlogistik {
+  font-family: 'Arial', sans-serif;
+  background-color: #085C45; /* Background color of the navbar */
+  padding: 10px; /* Padding around the content inside the navbar */
+}
+  
+.navbarlogistik nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+  
+.navbarlogistik nav img {
+  display: block;
+}
+  
+.navbarlogistik ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+  
+.navbarlogistik li {
+  margin-right: 20px; /* Spacing between each navbar item */
+}
+  
+.navbarlogistik a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 6px;
+}
+  
+.navbarlogistik a:hover {
+  color: #937100;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.formlogistik {
+  margin: auto;
+  margin-top: 4rem;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  padding: 50px;
+  border: 2px solid var(--penanda, #085B45);
+  background: white;
+}
+
+.formlogistik-inputnama {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.formlogistik-inputnama label {
+  margin-bottom: 5px;
+  color: #085B45;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.formlogistik-inputnama input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 460px;
+  box-sizing: border-box; /* Mencegah padding dan border mempengaruhi lebar total */
+}
+
+.formlogistik-inputnohp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.formlogistik-inputnohp label {
+  margin-bottom: 5px;
+  color: #085B45;
+  font-weight: 600;
+  text-align: left; /* Mengatur teks label ke kiri */
+  width: 100%; /* Mencegah label mengambil lebar penuh */
+}
+
+.formlogistik-inputnohp input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 460px;
+  box-sizing: border-box; /* Mencegah padding dan border mempengaruhi lebar total */
+}
+
+.formlogistik-inputnohp-with-icon {
+  position: relative;
+}
+
+.formlogistik-iconnohp {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Sesuaikan posisi ikon di dalam input */
+  transform: translateY(-50%);
+  color: #085B45;
+}
+
+.formlogistik-inputtgl {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.formlogistik-inputtgl label {
+  margin-bottom: 5px;
+  color: #085B45;
+  font-weight: 600;
+  text-align: left; /* Mengatur teks label ke kiri */
+  width: 100%; /* Mencegah label mengambil lebar penuh */
+}
+
+.formlogistik-inputtgl input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 460px;
+  box-sizing: border-box;
+  color: #085B45; /* Mencegah padding dan border mempengaruhi lebar total */
+}
+
+.formlogistik-alamat {
+  display: flex;
+}
+
+.formlogistik-inputalamat,
+.formlogistik-inputkelurahan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.formlogistik-inputalamat label,
+.formlogistik-inputkelurahan label {
+  margin-bottom: 5px;
+  color: #085B45;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.formlogistik-inputalamat input,
+.formlogistik-inputkelurahan input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formlogistik-inputalamat-with-icon,
+.formlogistik-inputkelurahan-with-icon {
+  position: relative;
+}
+
+.formlogistik-iconalamat,
+.formlogistik-iconkelurahan {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #085B45;
+}
+
+.formlogistik-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items:first baseline;
+  margin-top: 20px;
+  gap: 6px;
+}
+
+.formlogistik-checkbox label[for="checkbox"] {
+  margin-bottom: 5px;
+  color: #085B45;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.formlogistik-checkbox label {
+  margin-bottom: 5px;
+}
+
+.formlogistik-checkbox input {
+  margin-right: 5px;
+}
+
+.formlogistik-inputbaranglain {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formlogistik-inputbaranglain input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.formlogistik-inputbaranglain select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.formlogistik-inputalasan {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.formlogistik-inputalasan label {
+  margin-bottom: 5px;
+  color: #085B45;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.formlogistik-inputalasan textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #085B45;
+  width: 460px;
+  height: 100px; /* Tinggi textarea */
+  box-sizing: border-box;
+}
+
+.formlogistik-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.formlogistik-button button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #937100;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin-top: 4rem;
+  font-size: 16px;
+}
+
+footer {
+    background-color: #085C45;
+    margin-top: 100px;
+    height: 300px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .footercontent-logo, .footercontent-perusahaan, .footercontent-sosmed, .footercontent-kerjasama {
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  
+  .footercontent-perusahaan h3, .footercontent-sosmed h3, .footercontent-kerjasama h3 {
+    color: #B7B7B7;
+  }
+  
+  .footercontent-perusahaan h4, .footercontent-sosmed h4 {
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .footercontent-logoIL {
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .google-play-button {
+    width: auto;
+    height: 30px
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .logistik-navlink.active {
+    background-color: #937100;
+    border-radius: 20px;
+    padding: 6px;
+  }
+  
+
+
+
+

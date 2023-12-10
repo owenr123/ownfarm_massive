@@ -1,94 +1,83 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Register 1.css';
 import { Link } from 'react-router-dom';
-import gambar_register_1 from '../Assets/Pictures/gambar register 1.jpg';
-import gambar_upload from '../Assets/Icon/uploaded.jpg';
-import { FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
+import Gambarregister from '../Assets/Pictures/Gambar register 1.png';
+import { FaPhone, FaMapMarkerAlt, FaMap } from 'react-icons/fa';
 
-const register = () => {
+const Register1 = () => {
+
+    useEffect(() => {
+        // Setelah komponen dimuat, atur posisi scroll halaman ke atas
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
-        <div className="register-3">
-            <img src={gambar_register_1} className="gambar-register-1" />
-            <div className="register1-section">
+        <div className="register1">
+            <img src={Gambarregister} className="gambarregister" />
 
-                <div className="register1-level-line">
-                    <div className="register1-level1" />
-                    <div className="register1-level2" />
+            <div className="formregister1">
+                <div className="formregister1-levelline">
+                    <div className="formregister1-level1" />
+                    <div className="formregister1-level2" />
                 </div>
 
-                <h2 style={{color: "#07362A", fontWeight: "400", marginTop: "50px"}}>Daftar</h2>
+                <h2>Membuat akun anda!</h2>
+                <h2>Daftar!</h2>
 
-                <div className="registerform-1">
-
-                    <div className="nama-telpon">
-                        <div className="inputnama">
-                            <label htmlFor="namalengkap">Nama Lengkap</label>
-                            <input type="text" id="namalengkap"  name="namalengkap" placeholder="Nama" />
-                        </div>
-                        <div className="inputtelpon">
-                            <label htmlFor="telpon">Nomor Telpon</label>
-                            <div className="telpon-container">
-                                <input type="tel" id="telpon" name="telpon" placeholder="+62" />
-                                <FaPhone className="phone-icon" size={10} style={{color: "#07362A"}} />
-                            </div>
+                <div className="formregister1-namanohp">
+                    <div className="formregister1-inputnama">
+                        <label htmlFor="name">Nama Lengkap</label>
+                        <input type="text" id="name" placeholder="Nama" />
+                    </div>
+                    <div className="formregister1-inputnohp">
+                        <label htmlFor="nohp">No.HP</label>
+                        <div className="formregister1-inputnohp-with-icon">
+                            <FaPhone className="formregister1-iconnohp" />
+                            <input type="text" id="nohp" placeholder="+62" />
                         </div>
                     </div>
-
-                    <div className="alamat">
-                        <div className="inputalamat">
-                            <label htmlFor="alamat">Alamat</label>
-                            <div className="alamat-container">
-                                <input type="text" id="alamat" name="alamat" placeholder="Alamat" />
-                                <FaMapMarkedAlt className="alamat-icon" size={10} style={{color: "#07362A"}} />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="kota-kelurahan-kecamatan">
-                        <div className="inputkota">
-                            <label htmlFor="kota">Kota</label>
-                            <input type="text" id="kota"  name="kota" placeholder="Kota" />
-                        </div>
-                        <div className="inputkelurahan">
-                            <label htmlFor="kelurahan">kelurahan</label>
-                            <input type="text" id="kelurahan"  name="kelurahan" placeholder="Kel" />
-                        </div>
-                        <div className="inputkecamatan">
-                            <label htmlFor="kecamatan">Kecamatan</label>
-                            <input type="text" id="kecamatan"  name="kecamatan" placeholder="Kec" />
-                        </div>
-                    </div>
-
-                    <div className="register-line" />
-
-                    <div className="foto" style={{textAlign: "center"}}>
-                        <h2 style={{color: "#07362A", fontWeight: "500", textAlign: "center"}}>Unggah Foto</h2>
-                        <h3 style={{color: "#07362A", fontWeight: "300", textAlign: "center"}}>Unggah foto yang kamu bagikan sebagai syarat pendaftaran</h3>
-                        
-                        <div className="upload-foto">
-                            <div className="upload-column">
-                                <label htmlFor="file-input">
-                                    <img src={gambar_upload}
-                                        alt="Arrow Up"
-                                        className="arrow-up"
-                                    />
-                                    <span>Tarik kesini atau</span>
-                                    <button style={{marginTop: "20px"}}>Telusuri file</button>
-                                </label>
-                                <input type="file" id="file-input" />
-                            </div>
-                        </div>
-
-
-                        <Link to="/register2_ownfarm">
-                            <button style={{marginTop: "50px"}}>Selanjutnya</button>
-                        </Link>
-                    </div>
-
                 </div>
+
+                <div className="formregister1-inputalamat">
+                    <label htmlFor="alamat">Alamat</label>
+                    <div className="formregister1-inputalamat-with-icon">
+                        <FaMapMarkerAlt className="formregister1-iconalamat" />
+                        <input type="text" id="alamat" placeholder="Masukkan alamat" />
+                    </div>
+                </div>
+
+                <div className="formregister1-kotakelurahankecamatan">
+                    <div className="formregister1-inputkota">
+                        <label htmlFor="kota">Kota</label>
+                        <input type="text" id="kota" placeholder="kota" />
+                    </div>
+                    <div className="formregister1-inputkelurahan">
+                        <label htmlFor="kelurahan">Kelurahan</label>
+                        <input type="text" id="kelurahan" placeholder="kel" />
+                    </div>
+                    <div className="formregister1-inputkecamatan">
+                        <label htmlFor="kecamatan">kecamatan</label>
+                        <input type="text" id="kecamatan" placeholder="kec" />
+                    </div>
+                </div>
+
+                <div className="formregister1-line" />
+
+                <div className="formregister1-inputfotoprofile">
+                    <h3>Unggah foto</h3>
+                    <p>Unggah foto yang ingin kamu bagikan sebagai syarat pendaftaran</p>
+
+                    <div className="formregister1-inputfile">
+                        <input type="file" id="profilePicture" />
+                    </div>
+                </div>
+
+                <Link to="/register2_ownfarm" style={{ textDecoration: 'none' }}>
+                    <button>Selanjutnya</button>
+                </Link>
             </div>
         </div>
     );
 }
 
-export default register;
+export default Register1;

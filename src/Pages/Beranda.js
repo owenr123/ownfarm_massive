@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Beranda.css';
 import logo from '../Assets/Icon/Logo-ownfarm-white.png';
 import request from '../Assets/Icon/Request.png';
@@ -10,18 +10,66 @@ import requestdiajukan from '../Assets/Icon/Request diajukan.png';
 import menunggubarang from '../Assets/Icon/Menunggu barang.png';
 import panahkanan from '../Assets/Icon/Panah kanan.png';
 import logoIL from '../Assets/Icon/logo IL.png';
+import { FaEllipsisH, FaHeart, FaComment, FaBookmark } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const Beranda = ({ name, email, status }) => {
+const Beranda = () => {
+    const [isLikedOwen, setIsLikedOwen] = useState(false);
+    const [isSavedOwen, setIsSavedOwen] = useState(false);
+
+    const [isLikedAulia, setIsLikedAulia] = useState(false);
+    const [isSavedAulia, setIsSavedAulia] = useState(false);
+  
+    const [isLikedAsep, setIsLikedAsep] = useState(false);
+    const [isSavedAsep, setIsSavedAsep] = useState(false);
+  
+    const handleLikeOwen = () => {
+      setIsLikedOwen(!isLikedOwen);
+    };
+  
+    const handleSaveOwen = () => {
+      setIsSavedOwen(!isSavedOwen);
+    };
+
+    const handleLikeAulia = () => {
+        setIsLikedAulia(!isLikedAulia);
+      };
+    
+      const handleSaveAulia = () => {
+        setIsSavedAulia(!isSavedAulia);
+      };
+  
+    const handleLikeAsep = () => {
+      setIsLikedAsep(!isLikedAsep);
+    };
+  
+    const handleSaveAsep = () => {
+      setIsSavedAsep(!isSavedAsep);
+    };
+
+    useEffect(() => {
+        
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div className="beranda">
             <div className="navbarberanda">
                 <nav>
                     <img src={logo} style={{height: "auto", width: "8rem"}} alt="logo" />
                     <ul>
-                        <li><a href="/">Beranda</a></li>
-                        <li><a href="/logistik_ownfarm">Logistik</a></li>
-                        <li><a href="/komunitas_ownfarm">Komunitas</a></li>
-                        <li><a href="/profile_ownfarm">profile</a></li>
+                        <li className="nav-item">
+                            <Link to="/" className="beranda-navlink active">Beranda</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/formlogistik_ownfarm" className="nav-link">Logistik</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/komunitas_ownfarm" className="nav-link">Komunitas</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/profile_ownfarm" className="nav-link">Profile</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -78,21 +126,82 @@ const Beranda = ({ name, email, status }) => {
 
             <div className="komunitasberanda">
                 <h2>Komunitas</h2>
+
+                <div className="komunitasberanda-section">
                 <div className="profile-card">
                     <div className="header">
-                        <img src={photoprofile} />
+                        <img src={photoprofile} alt="Profile" />
                         <div className="info">
-                            <div className="name">{name}</div>
-                            <div className="email">{email}</div>
+                            <div className="name">Owen</div>
+                            <div className="email">@owenrangngan</div>
                         </div>
-                        <div className="options">...</div>
+                        <div className="options">
+                            <FaEllipsisH />
+                        </div>
                     </div>
-                    <div className="status">{status}</div>
+                    <div className="status">hai saya bukan petani, tapi petani kode wkwkwk</div>
                     <div className="actions">
-                        <button className="like-button">Like</button>
-                        <button className="comment-button">Comment</button>
-                        <button className="save-button">Save</button>
+                        <div className="action" onClick={handleLikeOwen}>
+                            <FaHeart color={isLikedOwen ? 'red' : '#DAD5D5'} />
+                        </div>
+                        <div className="action">
+                            <FaComment />
+                        </div>
+                        <div className="action" onClick={handleSaveOwen}>
+                            <FaBookmark color={isSavedOwen ? 'black' : '#DAD5D5'} />
+                        </div>
                     </div>
+                </div>
+
+                <div className="profile-card">
+                    <div className="header">
+                        <img src={photoprofile} alt="Profile" />
+                        <div className="info">
+                            <div className="name">Aulia</div>
+                            <div className="email">@aulia</div>
+                        </div>
+                        <div className="options">
+                            <FaEllipsisH />
+                        </div>
+                    </div>
+                    <div className="status">selamat pagi dunia tipu-tipu....hari ini jangan bikin aku kecewa yah😇</div>
+                    <div className="actions">
+                        <div className="action" onClick={handleLikeAulia}>
+                            <FaHeart color={isLikedAulia ? 'red' : '#DAD5D5'} />
+                        </div>
+                        <div className="action">
+                            <FaComment />
+                        </div>
+                        <div className="action" onClick={handleSaveAulia}>
+                            <FaBookmark color={isSavedAulia ? 'black' : '#DAD5D5'} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="profile-card">
+                    <div className="header">
+                        <img src={photoprofile} alt="Profile" />
+                        <div className="info">
+                            <div className="name">Asep</div>
+                            <div className="email">@asepppppp</div>
+                        </div>
+                        <div className="options">
+                            <FaEllipsisH />
+                        </div>
+                    </div>
+                    <div className="status">Mau beli pupuk, bolehkah pinjam dulu seratus 😂</div>
+                    <div className="actions">
+                        <div className="action" onClick={handleLikeAsep}>
+                            <FaHeart color={isLikedAsep ? 'red' : '#DAD5D5'} />
+                        </div>
+                        <div className="action">
+                            <FaComment />
+                        </div>
+                        <div className="action" onClick={handleSaveAsep}>
+                            <FaBookmark color={isSavedAsep ? 'black' : '#DAD5D5'} />
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
 
